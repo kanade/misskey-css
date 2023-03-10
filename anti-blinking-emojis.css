@@ -95,6 +95,6 @@
 .xeJ4G[title=":chian_saikou:"],
 .xeJ4G[title=":aussieparrot:"]
 {
-	filter: grayscale(100%);
-	opacity: .25;
+	filter: grayscale(100%) !important;
+	opacity: .25 !important;
 }
