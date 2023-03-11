@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* Pixel 7 / iPhone SE で確認*/
+/* **************************************************** */
+/* 
+ * RN非表示
+ */
+.xcSej:has(div.xBwhh) {
+	display: none;
+}
+/* **************************************************** */
+/* 
+ * 通知ポップアップを非表示
+ */
+.xpjbG {
+    display: none !important;
+}
+/* **************************************************** */
+/* 
+ * 絶対時間表記
+ */
+time:after {
+	content: " " attr(title);
+}
+/* **************************************************** */
+/* 
+ * ページ編集時の複製ボタンを無効化
+ */
+._button.xbaFh.xfjt2:has(.ti-copy) {
+    pointer-events: none;
+}
+/* **************************************************** */
+/* 
+ * 被フォロー状態を分かりやすく
+ */
+.vjnjpkug > .followed[data-v-fe875578],
+.ftskorzw > .main > .profile > .main > .banner-container > .followed[data-v-9857bc35]
+{
+    background: rgba(192, 0, 0, .5);
+}
+/* **************************************************** */
+/* 
+ * ウィジェットの編集リンク非表示
+ */
+.mk-widget-edit {
+	display: none !important;
+}
+/* **************************************************** */
+/* 
+ * デッキUI 編集サイドバーを非表示
+ */
+.left.xECNb {
+	display: none;
+}
+/* **************************************************** */
+/* 
+ * デッキUIのポップアップ調整
+ */
+.xpAOc:not(.xwAht) {
+	width: 90vw !important;
+	height: 90vh !important;
+	top: calc(50% - 90vh / 2);
+    left: calc(50% - 90vw / 2);
+}
+/* **************************************************** */
+/* 
+ * ノート入力ポップアップ
+ */
+.xpDI4.xxtDg._popup {
+	width: 90vw !important;
+	height: 90vh !important;
+	top: 0;
+	max-width: initial;
+	overflow: scroll;
+}
+/* ノート入力欄 */
+.xpDI4.xxtDg._popup .x8B0D {
+	height: 40vh;
+}
+/* ノートのプレビュー */
+.xpDI4.xxtDg._popup .xoGjR {
+	height: 40vh;
+    overflow: scroll;
+}
+/* **************************************************** */
+/* 
+ * 下エリアのボタン
+ */
+/* ボタン配置の調整 */
+.xApN7 {
+	background: none !Important;
+	border-top: none !important;
+	grid-template-columns: 1fr 1fr 1fr 1fr !important;
+}
+/* 半透明にする */
+.xyfXN._button:not(.x7c6u) {
+	background: rgba(0, 0, 0, 0.3) !important;
+}
+/* ウィジェットボタンは非表示 */
+.xyfXN._button:has(i.ti-apps) {
+	display: none !important;
+}
+/* **************************************************** */
+/* 
+ * 自分のノートはリアクションできないようにする
+ * "/@xxxxxxxx" の部分を自分のユーザー名にする
+ */
+/* ＋ボタン非表示 */
+.x5yeR > a[href="/@xxxxxxxx"] + .xDn7E .xhAPG > button:nth-last-child(2) {
+	display: none;
+}
+/* すでに付いているリアクションを押せないように */
+.x5yeR > a[href="/@xxxxxxxx"] + .xDn7E .xlT1y > button:hover {
+	pointer-events: all;
+	cursor: not-allowed;
+}
+.x5yeR > a[href="/@xxxxxxxx"] + .xDn7E .xlT1y > button:active {
+	pointer-events: none;
+}
+/* **************************************************** */
+/*
+ * MFMでx2, x3, x4, scaleの拡大を抑制
+ */
+.mfm-x2, .mfm-x3, .mfm-x4 {
+	font-size: 150%;
+    --mfm-zoom-size: 150%;
+}
+.x7pHL span {
+    transform: initial !important;
+}
+/* **************************************************** */
+/* 
+ * 外部インスタンスのリアクションは押せないようにする
+ */
+.xDRXD > .xeJ4G.x5kTm.x9Io4[alt*="@"] {
+	filter: grayscale(100%);
+	pointer-events: none;
+}
+/* **************************************************** */
+/*
+ * [08] 不要絵文字カテゴリ非表示
+ */
+/*
+.emojis > .group[data-v-c741f690]:not(.index) > :nth-child(-n+8),
+.emojis > .group[data-v-c741f690]:not(.index) > :nth-child(n+16):nth-child(-n+28),
+.emojis > .group[data-v-c741f690]:not(.index) > :nth-child(n+30):nth-child(-n+39),
+.emojis > .group[data-v-c741f690]:not(.index) > :nth-child(n+40)
+{
+	display: none;
+}
+*/
+/* **************************************************** */
+/*
+ * [11] 特定の絵文字を含んでいるノートを非表示
+ */
+.xcSej:has(.x7pHL .xeJ4G[title=":yosano_akiko_is_always_watching_you:"]),
+.xcSej:has(.x7pHL .xeJ4G[title=":is_all_scam:"]),
+.xcSej:has(.x7pHL .xeJ4G[title=":send_money:"])
+{
+    display: none;
+}
+/* **************************************************** */
+/*
+ * [13] フォロー解除を押せないように
+ */
+.kpoogebi.active {
+    pointer-events: none;
+    filter: grayscale(100%);
+}
+/* **************************************************** */
+/*
+ * [50] 特定絵リアクションをノートや通知一覧から非表示
+ */
+/* ノートに付いたリアクション一覧から消し去ります */
+._button.xDRXD.xhTzr:has([title=":send_money:"]),
+._button.xDRXD.xhTzr:has([title=":is_all_scam:"]),
+._button.xDRXD.xhTzr:has([title=":yosano_akiko_is_always_watching_you:"])
+{
+    display: none;
+}
+/* 見たくない絵文字の通知を通知欄から消し去ります */
+.notification:has(.xAV2R [title=":send_money:"]),
+.notification:has(.xAV2R [title=":is_all_scam:"]),
+.notification:has(.xAV2R [title=":yosano_akiko_is_always_watching_you:"])
+{
+    display: none;
+}
+/* **************************************************** */
+/*
+ * [98] アンテナのゴミ掃除
+ */
+.x5yeR:has([href="/play/9c1bu0cpab"]) {
+    display: none !important;
+}
+/* 折りたたみ（他のミュートにも効いちゃうけど） */
+.xkYCV {
+    display: none !important;
+}
+/* **************************************************** */
+/*
+ * [12] チャンネル投稿を非表示（メインカラム）
+ * リストは除外したい場合
+ */
+.xcSej:has(.xww2J[href^="/channels/"]),
+/* Renote */
+.xcSej:has(.xef7n .ti-device-tv)
+{
+    display: none;
+}
+/* **************************************************** */
