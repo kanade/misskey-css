@@ -2,13 +2,11 @@
 
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
-
 - 2023/04/01  
   GitHubにお引っ越し中  
   TLでパトロンバッジを非表示にする  
   ホバー時の絵文字を拡大  
   
-
 - 2023/03/17  
   【Update】フォロー解除を押せなくするCSSを、プロフィールを開けば押せるように変更  
 
@@ -68,7 +66,7 @@
   v13.3.4で確認  
   デッキUIで特定カラムのリアクションをすべて非表示にするCSSを追加  
   指定数よりリアクションが多いとき分かりやすいように文字でマークを付けるようにした  
-  特定条件のときノート入力ポップアップ内の要素が表示しきれてなかったのでスクロールするように修正  0
+  特定条件のときノート入力ポップアップ内の要素が表示しきれてなかったのでスクロールするように修正  
 
 - 2023/02/04 初版  
   v13.2.6で確認  
@@ -598,6 +596,32 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 /* ノートに付いているリアクションを拡大 */
 .xeJ4G.x5kTm.xhB9k.xunY9 {
     width: 120px; /* 拡大したい絵文字の幅 */   
+}
+```
+
+---
+### ウィジェット編集
+
+```css
+/**
+ * iPhone 14などノッチありデバイスでウィジェット編集が押せない問題に対処
+ */
+.xsN7f {
+    top: 2vh !important;
+    height: 92dvh !important;
+    border-radius: var(--radius);
+}
+
+/* ウィジェット編集をアイコンのみ＆位置調整 */
+.mk-widget-edit {
+    font-size: 0 !important;
+    position: absolute;
+    right: 0;
+    text-decoration: none !important;
+    line-height: 2rem;
+}
+.mk-widget-edit .ti:before {
+    font-size: 1.3rem;
 }
 ```
 
