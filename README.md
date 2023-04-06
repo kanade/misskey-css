@@ -2,7 +2,7 @@
 
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
-・2023/04/06  
+- 2023/04/06  
   Misskey.ioの宇宙猫アイコンを差し替える  
   ※ faviconとapple-touch-iconは変わりません  
   代わりにUserScriptをお使いください  
