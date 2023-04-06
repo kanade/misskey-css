@@ -625,3 +625,70 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 }
 ```
 
+---
+### Misskey.io アイコン差し替え
+
+```css
+/**
+ * Misskey.io アイコン差し替え
+ */
+
+:root {
+    --misskey-icon: url("https://s3.arkjp.net/emoji/blobcatnomblobdoggo.png") no-repeat;
+}
+
+/* サイドバー */
+.item._button.instance > img {
+    display: none !important;
+}
+.item._button.instance:before {
+    display: inline-block;
+    content: "";
+    background: var(--misskey-icon);
+    height: 48px;
+    width: 48px;
+    background-size: contain;
+}
+.banner {
+    display: none !important;
+}
+
+/* ローディング */
+#splash > img {
+    display: none !important;
+}
+#splash:before {
+    display: inline-block;
+    content: "";
+    background: var(--misskey-icon);
+    height: 48px;
+    width: 48px;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+/* サーバー情報 */
+.fwhjspax {
+    background-image: none !important;
+}
+.fwhjspax .content > img {
+    display: none !important;
+}
+.fwhjspax .content:before {
+    display: inline-block;
+    content: "";
+    background: var(--misskey-icon);
+    height: 64px;
+    width: 64px;
+    margin: 16px auto 0;
+    border-radius: 8px;
+    background-size: contain;
+}
+```
+
+
