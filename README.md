@@ -285,7 +285,7 @@ https://developer.mozilla.org/ja/docs/Web/CSS/:nth-child
 ```
 
 ---
-###外部のリアクションをわかりやすくする
+### 外部のリアクションをわかりやすくする
 ```css
 .xDRXD > .xeJ4G.x5kTm.x9Io4:not([src^="https://s3.arkjp.net/"]) {
 	filter: grayscale(100%); /* グレースケール */
@@ -633,7 +633,8 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ```
 
 ---
-### Misskey.io アイコン差し替え
+
+### Misskey.ioのアイコン差し替え（宇宙猫対策）
 
 ```css
 /**
@@ -697,5 +698,42 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
     background-size: contain;
 }
 ```
+---
 
+### 「サーバーから切断されました」を非表示
+```css
+/**
+ * 「サーバーから切断されました」を非表示
+ */
+.xn5WL {
+    display: none;
+}
+```
+
+---
+
+### ドライブの画像を大きくする
+サムネが小っちゃくて選びづらいので拡大します
+```css
+/* ドライブの画像を大きくする */
+.yfudmmck > .main > .contents > .files > .file[data-v-3c8cdd56] {
+    width: 256px;
+}
+.zdjebgpv.thumbnail {
+    width: 240px !important;
+    height: 240px !important;
+}
+```
+
+---
+
+### 投稿時に添付画像サムネイルを大きくする
+添付済みの画像を見やすいサイズに拡大します
+```css
+/* 投稿時に添付画像サムネイルを大きくする */
+.skeikyzd > .files > .file[data-v-1d4c5608] {
+    width: 240px;
+    height: 240px;
+}
+```
 
