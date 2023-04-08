@@ -733,10 +733,65 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ### 投稿時に添付画像サムネイルを大きくする
 添付済みの画像を見やすいサイズに拡大します
 ```css
-/* 投稿時に添付画像サムネイルを大きくする */
+/**
+ * 投稿時に添付画像サムネイルを大きくする
+ */
 .skeikyzd > .files > .file[data-v-1d4c5608] {
     width: 240px;
     height: 240px;
 }
 ```
+---
 
+### サーバー切断時のボタンをいい感じにする
+```css
+/**
+ * サーバー切断時のボタンをいい感じにする
+ */
+.xn5WL {
+    width: 32px;
+    height: 32px;
+    right: 16px;
+    top: 16px;
+    padding: 0 !important;
+}
+
+.xn5WL div:not([class]) {
+    display: none;
+}
+
+.xbaFh.xrmjY {
+    display: none;
+    padding: 0 !important;
+}
+
+.xn5WL .xBtVI {
+    margin-top: 0 !important;
+}
+
+.xn5WL .x2hCn.xrmjY {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    min-width: initial !important;  
+}
+
+.xbaFh.x2hCn.xrmjY:before {
+    font-size: 128%;
+    content: "\eb13";
+    font-family: "tabler-icons" !important;
+    text-align: center;
+    line-height: 1em;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.xn5WL .x2hCn.xrmjY .xossv {
+    display: none;
+}
+
+```
+
+![サーバー切断時のボタンをいい感じにする](assets/img/Screenshot_20230408-095742.jpg)
