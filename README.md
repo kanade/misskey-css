@@ -586,7 +586,7 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 
 ---
 ### ホバー時の絵文字を拡大
-
+![ホバー時の絵文字を拡大](assets/img/20230405-124630.jpg)
 ```css
 /**
  * ホバー時の絵文字を拡大
@@ -744,6 +744,7 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ---
 
 ### サーバー切断時のボタンをいい感じにする
+![サーバー切断時のボタンをいい感じにする](assets/img/Screenshot_20230408-095742.jpg)
 ```css
 /**
  * サーバー切断時のボタンをいい感じにする
@@ -793,5 +794,3 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 }
 
 ```
-
-![サーバー切断時のボタンをいい感じにする](assets/img/Screenshot_20230408-095742.jpg)
