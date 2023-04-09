@@ -586,7 +586,9 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 
 ---
 ### ホバー時の絵文字を拡大
-![ホバー時の絵文字を拡大](assets/img/20230405-124630.jpg)
+![ホバー時の絵文字を拡大](assets/img/20230401-190101.jpg)  
+![ホバー時の絵文字を拡大](assets/img/20230401-190116.jpg)  
+![ホバー時の絵文字を拡大](assets/img/20230401-190402.jpg)
 ```css
 /**
  * ホバー時の絵文字を拡大
