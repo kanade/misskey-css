@@ -660,7 +660,7 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
     width: 48px;
     background-size: contain;
 }
-.banner {
+.top .banner {
     display: none !important;
 }
 
