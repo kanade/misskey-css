@@ -3,6 +3,11 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
   
+
+- 2023/04/09  
+  - 【Fix】ドライブの画像を大きくする  
+  - 【Fix】投稿時に添付画像サムネイルを大きくする  
+  - 【Fix】Misskey.ioの宇宙猫アイコンを差し替える  
 - 2023/04/06  
   - 「サーバーから切断されました」を非表示  
   - ドライブの画像を大きくする  
@@ -718,10 +723,12 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ---
 
 ### ドライブの画像を大きくする
-サムネが小っちゃくて選びづらいので拡大します
+サムネが小っちゃくて選びづらいので拡大します。  
+サイズはPCで確認しているので、スマホ向けは適時調整してください。  
+![ドライブの画像を大きくする](assets/img/20230403-180420.jpg)
 ```css
 /* ドライブの画像を大きくする */
-.yfudmmck > .main > .contents > .files > .file[data-v-3c8cdd56] {
+.yfudmmck > .main > .contents > .files > .file {
     width: 256px;
 }
 .zdjebgpv.thumbnail {
@@ -733,14 +740,16 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ---
 
 ### 投稿時に添付画像サムネイルを大きくする
-添付済みの画像を見やすいサイズに拡大します
+添付済みの画像を見やすいサイズに拡大します。 
+サイズはPCで確認しているので、スマホ向けは適時調整してください。  
+![投稿時に添付画像サムネイルを大きくする](assets/img/20230403-180934.jpg)
 ```css
 /**
  * 投稿時に添付画像サムネイルを大きくする
  */
-.skeikyzd > .files > .file[data-v-1d4c5608] {
-    width: 240px;
-    height: 240px;
+.skeikyzd > .files > .file {
+    width: 240px !important;
+    height: 240px !important;
 }
 ```
 ---
