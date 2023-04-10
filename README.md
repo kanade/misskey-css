@@ -4,6 +4,8 @@
 <details><summary>クリックで展開できます</summary><div>
   
 
+- 2023/04/10
+  - 【Fix】自分のノートはリアクションできないようにする
 - 2023/04/09  
   - 【Fix】ドライブの画像を大きくする  
   - 【Fix】投稿時に添付画像サムネイルを大きくする  
@@ -208,19 +210,24 @@ div.left section:nth-child(3) .xlT1y
 
 ---
 ### 自分のノートはリアクションできないようにする
+![＋ボタンの非表示](assets/img/20230410-161707.jpg)
+![すでに付いているリアクションを押せないようにする](assets/img/20230410-161741.jpg)
 ```css
-/* コード内の`@_kanade_`のところを自分のユーザー名にしてください */
-/* 3箇所あります */
-.x5yeR > a[href="/@_kanade_"] + .xDn7E .xhAPG > button:nth-last-child(2) {
-	display: none;
+/*
+ * コード内の`@_kanade_`のところを自分のユーザー名にしてください
+ * 3箇所あります
+ */
+/* ＋ボタンの非表示 */
+.x5yeR > a[href="/@_kanade_"] + .xDn7E .xhAPG > button:has(.ti-plus) {
+    display: none;
 }
-
+/* すでに付いているリアクションを押せないようにする */
 .x5yeR > a[href="/@_kanade_"] + .xDn7E .xlT1y > button:hover {
-	pointer-events: all;
-	cursor: not-allowed;
+    pointer-events: all;
+    cursor: not-allowed;
 }
 .x5yeR > a[href="/@_kanade_"] + .xDn7E .xlT1y > button:active {
-	pointer-events: none;
+    pointer-events: none;
 }
 ```
 
