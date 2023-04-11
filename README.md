@@ -3,7 +3,8 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
   
-
+- 2023/04/11
+  - 特定のノートに対する通知を通知欄から非表示にする
 - 2023/04/10
   - 【Fix】自分のノートはリアクションできないようにする
 - 2023/04/09  
@@ -814,3 +815,37 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 }
 
 ```
+
+---
+
+### 特定のノートに対する通知を通知欄から非表示にする
+```css
+/**
+ * 特定のノートに対する通知を通知欄から非表示にする
+ * xxxxxxxxxx をノートのIDに書き換えてください
+
+ * 複数指定する場合はカンマで追加できます（こんな感じ）
+ .x9Bba._panel.notification:has([href="/notes/xxxxxxxxxx"]),
+ .x9Bba._panel.notification:has([href="/notes/yyyyyyyyyy"]),
+ .x9Bba._panel.notification:has([href="/notes/zzzzzzzzzz"])
+ {
+    display: none !important;
+ }
+ */
+.x9Bba._panel.notification:has([href="/notes/xxxxxxxxxx"]) {
+    display: none !important;
+}
+
+```
+
+---
+
+### テンプレ
+```css
+/**
+ * 
+ */
+
+```
+
+---
