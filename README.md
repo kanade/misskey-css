@@ -3,6 +3,8 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
   
+- 2023/04/12
+  - 【Fix】ドライブの画像を大きくする
 - 2023/04/11
   - 特定のノートに対する通知を通知欄から非表示にする
 - 2023/04/10
@@ -737,7 +739,11 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ![ドライブの画像を大きくする](assets/img/20230403-180420.jpg)
 ```css
 /* ドライブの画像を大きくする */
-.yfudmmck > .main > .contents > .files > .file {
+/*.yfudmmck > .main > .contents > .folders > .folder,*/
+.yfudmmck > .main > .contents > .folders > .file,
+/*.yfudmmck > .main > .contents > .files > .folder,*/
+.yfudmmck > .main > .contents > .files > .file
+{
     width: 256px;
 }
 .zdjebgpv.thumbnail {
