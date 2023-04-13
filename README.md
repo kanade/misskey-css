@@ -305,7 +305,7 @@ https://developer.mozilla.org/ja/docs/Web/CSS/:nth-child
 ---
 ### 外部のリアクションをわかりやすくする
 ```css
-.xDRXD > .xeJ4G.x5kTm.x9Io4:not([src^="https://s3.arkjp.net/"]) {
+.xDRXD:not(.xhTzr) img {
 	filter: grayscale(100%); /* グレースケール */
 	pointer-events: none; /* カーソルイベントを無効 */
 }
