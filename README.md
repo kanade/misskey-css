@@ -217,6 +217,8 @@ div.left section:nth-child(3) .xlT1y
 ### 自分のノートはリアクションできないようにする
 ![＋ボタンの非表示](assets/img/20230410-161707.jpg)
 ![すでに付いているリアクションを押せないようにする](assets/img/20230410-161741.jpg)
+
+（ノート詳細を開くと自分のノートでもリアクション追加できるのは仕様です）
 ```css
 /*
  * コード内の`@_kanade_`のところを自分のユーザー名にしてください
@@ -857,3 +859,5 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ```
 
 ---
+
+[欲しいものリスト](https://www.amazon.jp/hz/wishlist/ls/2ZO0R36GVTG6M)
