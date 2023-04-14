@@ -149,6 +149,7 @@
     - [サーバー切断時のボタンをいい感じにする](#サーバー切断時のボタンをいい感じにする)
     - [特定のノートに対する通知を通知欄から非表示にする](#特定のノートに対する通知を通知欄から非表示にする)
     - [テンプレ](#テンプレ)
+- [欲しいものリスト](#欲しいものリスト)
 
 </div></details>
 
@@ -965,4 +966,6 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 
 ---
 
-[欲しいものリスト](https://www.amazon.jp/hz/wishlist/ls/2ZO0R36GVTG6M)
+# 欲しいものリスト
+[お役に立てましたらぜひ](https://www.amazon.jp/hz/wishlist/ls/2ZO0R36GVTG6M)
+（でもまずはしゅいろちゃんと村上さんに寄付してあげてね）
