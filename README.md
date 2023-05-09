@@ -3,6 +3,8 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2023/05/10
+  - 【Fix】デッキUI 編集サイドバーを非表示
 - 2023/05/06
   - 通知のリンク幅を文字列の部分だけにする
 - 2023/04/14
@@ -249,7 +251,7 @@ div.left section:nth-child(3) .xlT1y
 
 ### デッキUI 編集サイドバーを非表示
 ```css
-.left > .xECNb {
+._textButton.xxDDL {
 	display: none;
 }
 ```
