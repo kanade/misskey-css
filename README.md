@@ -3,6 +3,9 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2023/05/11
+  - 【Fix】デッキUI 編集サイドバーを非表示
+  - 【Fix】デフォルトUIウィジェットの編集リンク非表示
 - 2023/05/10
   - 【Fix】デッキUI 編集サイドバーを非表示
 - 2023/05/06
@@ -251,7 +254,7 @@ div.left section:nth-child(3) .xlT1y
 
 ### デッキUI 編集サイドバーを非表示
 ```css
-._textButton.xxDDL {
+.xECNb {
 	display: none;
 }
 ```
@@ -444,7 +447,7 @@ https://developer.mozilla.org/ja/docs/Web/CSS/:nth-child
 
 ### デフォルトUIウィジェットの編集リンク非表示
 ```css
-.mk-widget-edit {
+._textButton.xxDDL {
 	display: none !important;
 }
 ```
