@@ -176,8 +176,8 @@ Windows上のChrome(Vivaldi)およびFirefoxのデフォルト/デッキUI, Andr
 あくまで自己責任にてご使用くださいませ。
 
 アップデートなどにより予告なく動作しなくなる、または表示が崩れることがあるかもしれません。  
-その場合はカスタムCSSを一度リセットしてみてください。  
-不具合報告はしゅいろさんや村上さんではなく [`@kanade`](https://mfmf.club/@kanade) までお願いいたします。
+その場合はカスタムCSSをなにも設定していない状態に戻してみてください。  
+不具合報告は [`@kanade`](https://mfmf.club/@kanade) までお願いいたします。
 
 さらに快適なMisskeyライフのお供になれれば幸いです。  
 
@@ -1061,4 +1061,3 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 
 # 欲しいものリスト
 [お役に立てましたらぜひ](https://www.amazon.jp/hz/wishlist/ls/2ZO0R36GVTG6M)  
-（でもまずはしゅいろちゃんと村上さんに寄付してあげてね）
