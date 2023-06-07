@@ -3,6 +3,8 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2023/06/07
+  - 【Fix】リアクション選択のサイズ調整
 - 2023/05/11
   - 【Fix】デッキUI 編集サイドバーを非表示
   - 【Fix】デフォルトUIウィジェットの編集リンク非表示
@@ -513,13 +515,13 @@ https://github.com/kanade/misskey-css/blob/main/anti-blinking-emojis.css
 ### リアクション選択のサイズ調整
 ```css
 /* 基本設定 → リアクション一覧の枠 */
-.zoaiodol[data-v-543587d0] {
+.xaBSl {
     padding: 6px;
 }
 
 /* 絵文字のサイズ */
-.zoaiodol > button > img.xeJ4G.x5kTm,
-.zoaiodol > button > img.xagin
+.xaBSl > button > img.xeJ4G.x5kTm,
+.xaBSl > button > img.xagin
 {
     height: 2.25em;
 }
