@@ -5,6 +5,7 @@
 
 - 2023/06/07
   - 【Fix】リアクション選択のサイズ調整
+  - 【Fix】通知とフォロー一覧のフォロー解除を押せなくする
 - 2023/05/11
   - 【Fix】デッキUI 編集サイドバーを非表示
   - 【Fix】デフォルトUIウィジェットの編集リンク非表示
@@ -745,9 +746,10 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 
 ### 通知とフォロー一覧のフォロー解除を押せなくする
 ```css
-/* 通知とフォロー一覧のフォロー解除を押せなくする */
-.kpoogebi.active.koudoku-button,
-.xkPP6 .kpoogebi.active.full
+/* 通知とフォロー/フォロワー一覧のフォロー/フォロー解除を押せなくする */
+/* 誤フォロー、誤フォロー解除を防ぐため、プロフィールを開いたときのみ操作可能なように */
+.notification .x88qx.xfS58, /* 通知 */
+.x88qx.xCbzz /* フォロー/フォロワー一覧 */
 {
     pointer-events: none;
     filter: grayscale(100%);
