@@ -3,6 +3,8 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2023/06/17
+  - ユーザーアイコンの差し替え
 - 2023/06/07
   - 【Fix】リアクション選択のサイズ調整
   - 【Fix】通知とフォロー一覧のフォロー解除を押せなくする
@@ -164,6 +166,7 @@
     - [特定のノートに対する通知を通知欄から非表示にする](#特定のノートに対する通知を通知欄から非表示にする)
     - [UIアニメーションを減らしていてもねこ耳を動かせるようにする](#uiアニメーションを減らしていてもねこ耳を動かせるようにする)
     - [通知のリンク幅を文字列の部分だけにする](#通知のリンク幅を文字列の部分だけにする)
+    - [ユーザーアイコンの差し替え](#ユーザーアイコンの差し替え)
     - [テンプレ](#テンプレ)
 - [欲しいものリスト](#欲しいものリスト)
 
@@ -1049,6 +1052,63 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 .xi4PS {
     display: initial;
 }
+```
+
+---
+
+### ユーザーアイコンの差し替え
+```css
+/**
+ * アイコンは苦手だけどTLで見ていたい人がいる場合に便利かも
+ * 
+ * [href="/@kanade"] の部分をユーザーIDに変更する
+ * リモートサーバでも可。その場合は
+ * [href="/@kanade@mfmf.club"] のようにする
+ * 指定を増やす場合は最後の行以外をカンマで繋げる
+*/
+
+/* ==== タイムライン ==== */
+/* プロフ画像とねこ耳を非表示 */
+.x5yeR > [href="/@kanade"] > .xraw1,
+.x5yeR > [href="/@kanade"] > .xbyxl
+{
+    display: none;
+}
+
+/* アイコンの差し替え */
+.x5yeR > [href="/@kanade"]:after
+{
+    display: inline-block;
+    content: "";
+    /* 差し替えたい画像のURLを指定してください */
+    background: url("https://mfmf.s3.ap-northeast-1.wasabisys.com/media/06c6fd67-2563-4e51-8376-ae3e7db0d2da.png") no-repeat;
+    background-size: contain;
+    height: 42px;
+    width: 42px;
+}
+
+/* ==== 通知欄 ==== */
+/* プロフ画像とねこ耳を非表示 */
+.xwUec > [href="/@kanade"] > .xraw1,
+.xwUec > [href="/@kanade"] > .xbyxl,
+.x3YLY > [href="/@kanade"] > .xraw1,
+.x3YLY > [href="/@kanade"] > .xbyxl
+{
+    display: none;
+}
+/* アイコンの差し替え */
+.xwUec > [href="/@kanade"]:after,
+.x3YLY > [href="/@kanade"]:after
+{
+    display: inline-block;
+    content: "";
+    /* 差し替えたい画像のURLを指定してください */
+    background: url("https://mfmf.s3.ap-northeast-1.wasabisys.com/media/06c6fd67-2563-4e51-8376-ae3e7db0d2da.png") no-repeat;
+    background-size: contain;
+    height: 42px;
+    width: 42px;
+}
+
 ```
 
 ---
