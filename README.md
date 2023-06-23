@@ -198,6 +198,7 @@ https://addons.mozilla.org/ja/firefox/addon/styl-us/
 ## カスタムCSSの設定例
 
 ### 投稿日時に絶対時間表記にする
+![投稿日時に絶対時間表記にする](assets/img/20230623-183317.png)
 ```css
 time {
     font-size: 0;
@@ -268,9 +269,8 @@ div.left section:nth-child(3) .xlT1y
 ---
 
 ### デッキUIのポップアップ調整
+![デッキUIのポップアップ調整](assets/img/20230623-183520.jpg)
 ```css
-/* インラインCSSを上書きするために!importantを使っています */
-/* そのためドラッグ操作でポップアップのリサイズができません */
 .xpAOc:not(.xwAht) {
 	width: 720px !important;
 	height: 960px !important;
@@ -282,6 +282,7 @@ div.left section:nth-child(3) .xlT1y
 ---
 
 ### ノート入力ポップアップ全般
+![ ノート入力ポップアップ全般](assets/img/20230623-184137.png)
 #### ノート入力ポップアップ
 ```css
 .xpDI4.xxtDg._popup {
@@ -306,6 +307,7 @@ div.left section:nth-child(3) .xlT1y
 }
 ```
 #### ノート入力での絵文字ピッカー
+![ノート入力での絵文字ピッカー](assets/img/20230623-184227.jpg)
 ```css
 .xpAOc .omfetrab,
 .xpAOc .emojis
@@ -1057,6 +1059,10 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ---
 
 ### ユーザーアイコンの差し替え
+![ユーザーアイコンの差し替え](assets/img/20230617-01.png)
+
+[プラグインを作成しました](https://github.com/kanade/misskey-plugin/blob/main/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%81%AE%E5%B7%AE%E3%81%97%E6%9B%BF%E3%81%88.txt)  
+こっちのほうが実用的。
 ```css
 /**
  * アイコンは苦手だけどTLで見ていたい人がいる場合に便利かも
