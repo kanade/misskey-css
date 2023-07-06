@@ -925,7 +925,7 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
     width: 240px;
     height: 240px;
 }
-.x4Rm8, .xkJBF {
+.x4Rm8 {
     width: 240px;
     height: 240px;
 }
