@@ -3,6 +3,9 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2023/07/06
+  - 【Fix】ドライブの画像を大きくする
+  - 【Fix】投稿時に添付画像サムネイルを大きくする
 - 2023/06/17
   - ユーザーアイコンの差し替え
 - 2023/06/07
@@ -915,16 +918,16 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ![ドライブの画像を大きくする](assets/img/20230403-180420.jpg)
 ```css
 /* ドライブの画像を大きくする */
-/*.yfudmmck > .main > .contents > .folders > .folder,*/
-.yfudmmck > .main > .contents > .folders > .file,
-/*.yfudmmck > .main > .contents > .files > .folder,*/
-.yfudmmck > .main > .contents > .files > .file
-{
-    width: 256px;
+.xCJma .x6vbC {
+    width: 240px;
 }
-.zdjebgpv.thumbnail {
-    width: 240px !important;
-    height: 240px !important;
+.xDq9N {
+    width: 240px;
+    height: 240px;
+}
+.x4Rm8, .xkJBF {
+    width: 240px;
+    height: 240px;
 }
 ```
 
@@ -939,9 +942,9 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 /**
  * 投稿時に添付画像サムネイルを大きくする
  */
-.skeikyzd > .files > .file {
-    width: 240px !important;
-    height: 240px !important;
+.xtEVP {
+    width: 240px;
+    height: 240px
 }
 ```
 
