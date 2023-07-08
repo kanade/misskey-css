@@ -714,7 +714,7 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 /* 画像の幅を調整 */
 /* デッキスタイルで特定のTLのみ */
 /* この場合はデッキ左から数えて3番目のカラムにのみ適用 */
-.left section:nth-child(3) .xbIzI
+.xrNPB section:nth-child(3) .xkJBF
 {
     width: 50%;
     /* これを入れると中央揃え */
