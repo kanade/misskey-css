@@ -1138,6 +1138,11 @@ NSFWのクリック前
 .xcKaF:has(+ .x4RFf .xt7Nj) {
     filter: blur(16px); /* 大きい数値ほどぼかし度合いが高くなる */
 }
+
+/* マウスホバー時、タップ時にフィルタ解除したい人は以下も追加 */
+.xcKaF:has(+ .x4RFf .xt7Nj):hover {
+    filter: none;
+}
 ```
 
 ---
