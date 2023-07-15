@@ -1126,6 +1126,9 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ---
 
 ### NSFW画像のサムネをクリック後もぼかす
+非NSFW画像のうち、ALTが付与されている画像も対象になってしまっているようです。  
+そのうち修正するかもしれません。
+
 NSFWのクリック前  
 ![NSFWのクリック前](assets/img/20230709-113158.png)
 
