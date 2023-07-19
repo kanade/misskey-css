@@ -3,6 +3,9 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2023/07/19
+  - 【Fix】デッキUI指定カラムのリアクションをぼかす（ホバーで表示）
+  - 【Fix】デッキUI指定カラムのリアクション全非表示
 - 2023/07/09
   - NSFW画像のサムネをクリック後もぼかす
 - 2023/07/06
@@ -242,10 +245,10 @@ time:after {
 マウスホバーかタップ＆ホールドで通常表示できます。
 ```css
 /* この場合は左から数えて3番目のカラムにのみ適用 */
-section.xnksy.xeiRC.xa96n:nth-child(3) .xlT1y {
+section.xAOWy:nth-child(3) .xlT1y {
 	filter: blur(5px);
 }
-section.xnksy.xeiRC.xa96n:nth-child(3) .xlT1y:hover {
+section.xAOWy:nth-child(3) .xlT1y:hover {
 	filter: none;
 }
 ```
@@ -257,7 +260,7 @@ section.xnksy.xeiRC.xa96n:nth-child(3) .xlT1y:hover {
 （自分のノートに全然リアクション付かないのに、あとから投稿されたノートにばかりリアクションが付いたりすると凹むときあるよね…）
 ```css
 /* この場合は左から数えて3番目のカラムにのみ適用 */
-div.left section:nth-child(3) .xlT1y
+section.xAOWy:nth-child(3) .xlT1y
 {
 	display: none;
 }
