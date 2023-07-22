@@ -3,6 +3,8 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2023/07/22
+  - 【Fix】HTL以外で画像サイズを変更
 - 2023/07/19
   - 【Fix】デッキUI指定カラムのリアクションをぼかす（ホバーで表示）
   - 【Fix】デッキUI指定カラムのリアクション全非表示
@@ -720,7 +722,7 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 /* 画像の幅を調整 */
 /* デッキスタイルで特定のTLのみ */
 /* この場合はデッキ左から数えて3番目のカラムにのみ適用 */
-.xrNPB section:nth-child(3) .xkJBF
+.xrNPB section:nth-child(3) .xcKaF .xkJBF
 {
     width: 50%;
     /* これを入れると中央揃え */
