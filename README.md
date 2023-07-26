@@ -1131,9 +1131,10 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ---
 
 ### NSFW画像のサムネをクリック後もぼかす
-非NSFW画像のうち、GIF画像やALTが付与されている画像も対象になってしまっているようです。  
+~~非NSFW画像のうち、GIF画像やALTが付与されている画像も対象になってしまっているようです。  
 そのうち修正したいですがDOMの構造上難しいと思います。  
-ご利用の際は上記をご了承ください。
+ご利用の際は上記をご了承ください。~~  
+解決したと思います。
 
 NSFWのクリック前  
 ![NSFWのクリック前](assets/img/20230709-113158.png)
@@ -1144,12 +1145,11 @@ NSFWのクリック前
 /**
  * NSFW画像をクリック後もぼかす
  */
-.xcKaF:has(+ .x4RFf .xt7Nj) {
+.xcKaF:has(+ .x4RFf .xt7Nj .ti-eye-exclamation) {
     filter: blur(16px); /* 大きい数値ほどぼかし度合いが高くなる */
 }
 
-/* マウスホバー時、タップ時にフィルタ解除したい人は以下も追加 */
-.xcKaF:has(+ .x4RFf .xt7Nj):hover {
+.xcKaF:has(+ .x4RFf .xt7Nj .ti-eye-exclamation):hover {
     filter: none;
 }
 ```
