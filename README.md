@@ -3,6 +3,8 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2023/08/05
+  - 【Update】指定したリアクションをノートや通知欄から消す（Unicode絵文字版）
 - 2023/07/29
   - 【New】NSFWを含むノートを非表示
 - 2023/07/26
@@ -701,6 +703,19 @@ time:after {
 
 /* 見たくない絵文字の通知を通知欄から消し去ります */
 .notification:has(.xAV2R [title=":chikuwa:"]) {
+    display: none;
+}
+```
+
+Unicode絵文字を非表示にしたい場合はこちら
+```css
+/* Unicode絵文字版 */
+/* ノートに付いたリアクション一覧から消し去ります */
+._button.xDRXD.xhTzr:has([alt="🐶"]) {
+    display: none;
+}
+/* 見たくない絵文字の通知を通知欄から消し去ります */
+.notification:has(.xAV2R [alt="🐶"]) {
     display: none;
 }
 ```
