@@ -3,6 +3,8 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2023/09/10
+  - 【Update】Renoteの非表示（デッキスタイル）
 - 2023/08/07
   - 【New】CW設定されたノートのリアクションをぼかす（ホバーで表示）
 - 2023/08/05
@@ -244,8 +246,8 @@ time:after {
 #### デッキスタイルで特定のカラムのみ対象の場合
 ```css
 /* この場合は左から数えて2番目と3番目のカラムにのみ適用 */
-.left section:nth-child(2) .xcSej.x3762:has(.xBwhh),
-.left section:nth-child(3) .xcSej.x3762:has(.xBwhh)
+.xrNPB section:nth-child(2) .xcSej.x3762:has(.xBwhh),
+.xrNPB section:nth-child(3) .xcSej.x3762:has(.xBwhh)
 {
     display: none;
 }
