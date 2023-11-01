@@ -7,6 +7,8 @@
   - 【New】リアクションのホバー時にポップアップを非表示
   - 【New】リアクションのホバー時にリアクションしたユーザー一覧を非表示
   - 【New】リアクションの数を非表示
+  - 【New】デッキUIでLTLの画像をぼかす
+  - 【New】デフォルトUIでLTLの画像をぼかす
 - 2023/09/10
   - 【Update】Renoteの非表示（デッキスタイル）
 - 2023/08/07
@@ -197,6 +199,8 @@
   - [リアクションのホバー時にポップアップを非表示](#リアクションのホバー時にポップアップを非表示)
   - [リアクションのホバー時にリアクションしたユーザー一覧を非表示](#リアクションのホバー時にリアクションしたユーザー一覧を非表示)
     - [リアクションの数を非表示](#リアクションの数を非表示)
+    - [デッキUIでLTLの画像をぼかす](#デッキuiでltlの画像をぼかす)
+    - [デフォルトUIでLTLの画像をぼかす](#デフォルトuiでltlの画像をぼかす)
     - [テンプレ](#テンプレ)
 - [欲しいものリスト](#欲しいものリスト)
 
@@ -1262,6 +1266,47 @@ NSFWのクリック前
 
 ---
 
+### デッキUIでLTLの画像をぼかす
+```css
+/**
+ * デッキUIでLTLの画像をぼかす
+ */
+ /* 画像サイズを制限 */
+.xAOWy:has(.ti-planet) .xutAY.xsfFg {
+    max-height: 120px !important;
+}
+/* ぼかしをかける */
+.xAOWy:has(.ti-planet) .xcKaF {
+    filter: blur(16px); /* 大きい数値ほどぼかし度合いが高くなる */
+}
+/* マウスカーソルを重ねるとぼかしを解除 */
+.xAOWy:has(.ti-planet) .xcKaF:hover {
+    filter: none;
+}
+```
+
+---
+
+### デフォルトUIでLTLの画像をぼかす
+```css
+/**
+ * デフォルトUIでLTLの画像をぼかす
+ */
+/* 画像サイズを制限 */
+.xFdHz:has(.xo5lq.xj7PE.xvOIQ .ti-planet) .xcSej.x3762 .xutAY {
+    max-height: 120px !important;
+}
+/* ぼかしをかける */
+.xFdHz:has(.xo5lq.xj7PE.xvOIQ .ti-planet) .xcSej.x3762 .xcKaF {
+    filter: blur(16px); /* 大きい数値ほどぼかし度合いが高くなる */
+}
+/* マウスカーソルを重ねるとぼかしを解除 */
+.xFdHz:has(.xo5lq.xj7PE.xvOIQ .ti-planet) .xcSej.x3762 .xcKaF:hover {
+    filter: none;
+}
+```
+
+---
 ### テンプレ
 ```css
 /**
