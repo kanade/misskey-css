@@ -826,7 +826,7 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
 ```css
 /* 通知とフォロー/フォロワー一覧のフォロー/フォロー解除を押せなくする */
 /* 誤フォロー、誤フォロー解除を防ぐため、プロフィールを開いたときのみ操作可能なように */
-.notification .x88qx.xfS58, /* 通知 */
+.xfKPa.xf9zr.xBIqc.xjjs0 .x88qx.xfS58, /* 通知 */
 .x88qx.xCbzz /* フォロー/フォロワー一覧 */
 {
     pointer-events: none;
