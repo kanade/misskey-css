@@ -3,6 +3,8 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2023/11/10
+  - 【Update】通知インジケータから件数を消す
 - 2023/11/08
   - 【New】通知インジケータから件数を消す
   - 【New】通知インジケータそのものを消す
@@ -1321,8 +1323,9 @@ NSFWのクリック前
  * 通知インジケータから件数を消す
  */
 ._indicateCounter {
-    color: var(--indicator);
-    padding: 0.1em 0.1em;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
 }
 ```
 
