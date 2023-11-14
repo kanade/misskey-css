@@ -1088,7 +1088,7 @@ div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
     display: none !important;
  }
  */
-.x9Bba._panel.notification:has([href="/notes/xxxxxxxxxx"]) {
+.x9Bba._panel:has([href="/notes/xxxxxxxxxx"]) {
     display: none !important;
 }
 
