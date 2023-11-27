@@ -1,0 +1,46 @@
+/**
+ * サーバー切断時のボタンをいい感じにする
+ */
+.xn5WL {
+    width: 32px;
+    height: 32px;
+    right: 16px;
+    top: 16px;
+    padding: 0 !important;
+}
+
+.xn5WL div:not([class]) {
+    display: none;
+}
+
+.xbaFh.xrmjY {
+    display: none;
+    padding: 0 !important;
+}
+
+.xn5WL .xBtVI {
+    margin-top: 0 !important;
+}
+
+.xn5WL .x2hCn.xrmjY {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    min-width: initial !important;  
+}
+
+.xbaFh.x2hCn.xrmjY:before {
+    font-size: 128%;
+    content: "\eb13";
+    font-family: "tabler-icons" !important;
+    text-align: center;
+    line-height: 1em;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.xn5WL .x2hCn.xrmjY .xossv {
+    display: none;
+}

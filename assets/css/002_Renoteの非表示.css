@@ -1,0 +1,12 @@
+/* すべてのスタイル（デフォルト、デッキ、クラシック）に適用する場合 */
+.xcSej.x3762:has(.xBwhh) {
+    display: none;
+}
+
+/* デッキスタイルで特定のカラムのみ対象の場合 */
+/* この場合は左から数えて2番目と3番目のカラムにのみ適用 */
+.xrNPB section:nth-child(2) .xcSej.x3762:has(.xBwhh),
+.xrNPB section:nth-child(3) .xcSej.x3762:has(.xBwhh)
+{
+    display: none;
+}

@@ -1,0 +1,13 @@
+/**
+ * 通知インジケータそのものを消す
+ */
+.xxiU7 {
+    display: none;
+}
+
+/**
+ * スマホだとこっちじゃないと消えないかも
+ */
+._indicateCounter {
+    display: none;
+}

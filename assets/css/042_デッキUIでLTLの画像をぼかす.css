@@ -1,0 +1,16 @@
+/**
+ * デッキUIでLTLの画像をぼかす
+ * カラムが「メイン」ではなく「タイムライン」である必要があります。
+ */
+ /* 画像サイズを制限 */
+.xAOWy:has(.ti-planet) .xutAY.xsfFg {
+    max-height: 120px !important;
+}
+/* ぼかしをかける */
+.xAOWy:has(.ti-planet) .xcKaF {
+    filter: blur(16px); /* 大きい数値ほどぼかし度合いが高くなる */
+}
+/* マウスカーソルを重ねるとぼかしを解除 */
+.xAOWy:has(.ti-planet) .xcKaF:hover {
+    filter: none;
+}

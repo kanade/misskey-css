@@ -1,0 +1,13 @@
+/* 長いノートを指定行以降省略する */
+.xDn7E .x7pHL {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 10; /* この場合は10行まで表示 */
+	overflow: hidden;
+}
+
+/* ノート全文をホバー（タップ）で表示 */
+.xDn7E:hover .x7pHL {
+	display: block;
+	overflow: visible;
+}
