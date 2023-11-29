@@ -1,8 +1,0 @@
-/* ノートに添付されたGIFアニメをホバー時のみ表示（普段は隠す） */
-.gqnyydlz.image:has(.gif) img {
-	visibility: hidden;
-}
-
-.gqnyydlz.image:has(.gif):hover img {
-	visibility: visible;
-}

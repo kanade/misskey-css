@@ -1,4 +1,0 @@
-/* ページ編集時の複製ボタンを無効化 */
-._button.xbaFh.xfjt2:has(i.ti-copy) {
-    pointer-events: none;
-}

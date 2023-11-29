@@ -1,5 +1,0 @@
-/* この場合は左から数えて3番目のカラムにのみ適用 */
-section.xAOWy:nth-child(3) .xlT1y
-{
-	display: none;
-}

@@ -1,7 +1,0 @@
-time {
-    font-size: 0;
-}
-time:after {
-    content: attr(title);
-    font-size: 0.9rem;
-}

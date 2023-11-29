@@ -1,5 +1,0 @@
-/* 特定の絵文字を含んでいるノートを非表示にする */
-/* 絵文字の名前を指定する */
-.xcSej.x3762:has(.x7pHL .xeJ4G[title=":yosano_akiko_is_always_watching_you:"]) {
-    display: none;
-}

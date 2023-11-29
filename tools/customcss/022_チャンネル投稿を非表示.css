@@ -1,9 +1,0 @@
-/* チャンネル投稿を非表示 */
-/* リストは除外したい場合 */
-div:has(.xj7PE:first-child) + div .x5yeR:has(.xww2J[href^="/channels/"]) {
-    display: none;
-}
-/* リストも対象にしていい場合 */
-.x5yeR:has(.xww2J[href^="/channels/"]) {
-    display: none;
-}
