@@ -1,5 +1,9 @@
 # Misskey用カスタムCSS
 
+## お知らせ
+[カスタムCSS生成ツール](https://kanade.github.io/misskey-css/tools/)を試験的に作りました。  
+このページにまとめてあるCSSのうち必要なものだけをチェックで選び生成ボタンを押すと、コピペできる形式でひとつにまとめるものです。
+
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
@@ -146,6 +150,7 @@
 <details><summary>クリックで展開できます</summary><div>
 
 - [Misskey用カスタムCSS](#misskey用カスタムcss)
+  - [お知らせ](#お知らせ)
   - [更新履歴](#更新履歴)
   - [目次](#目次)
   - [説明](#説明)
