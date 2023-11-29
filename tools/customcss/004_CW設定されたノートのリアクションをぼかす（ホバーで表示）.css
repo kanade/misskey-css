@@ -1,0 +1,7 @@
+div.xDn7E:has(._button.xd2wm) .xlT1y {
+    filter: blur(5px);
+}
+
+div.xDn7E:has(._button.xd2wm) .xlT1y:hover {
+	filter: none;
+}

@@ -1,0 +1,5 @@
+/* 外部のリアクションをわかりやすくする */
+.xDRXD:not(.xhTzr) img {
+	filter: grayscale(100%); /* グレースケール */
+	pointer-events: none; /* カーソルイベントを無効 */
+}

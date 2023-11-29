@@ -1,0 +1,12 @@
+/**
+ * NSFWを含むノートを非表示
+ */
+/* NSFWを隠さない設定のとき */
+.xcSej.x3762:has(.x4RFf .ti-eye-exclamation) {
+    display: none;
+}
+
+/* NSFWを隠す設定のとき */
+.xcSej.x3762:has(.xBp91) {
+    display: none;
+}

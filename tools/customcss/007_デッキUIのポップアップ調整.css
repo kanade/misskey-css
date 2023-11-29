@@ -1,0 +1,7 @@
+/* デッキUIのポップアップ調整 */
+.xpAOc:not(.xwAht) {
+    width: 720px !important;
+    height: 960px !important;
+    top: calc(50% - 960px / 2);
+    left: calc(50% - 720px / 2);
+}

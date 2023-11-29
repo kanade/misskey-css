@@ -1,0 +1,5 @@
+/* 特定の人がしたRenoteを非表示 */
+/* `@_kanade_`のところをRenoteを表示したくないユーザー名にする */
+.xcSej:has(.xBwhh [href^="/@_kanade_"]) {
+	display: none;
+}

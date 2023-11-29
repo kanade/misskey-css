@@ -1,0 +1,19 @@
+/**
+ * ホバー時の絵文字を拡大
+ */
+/* ノートテキストに含まれる絵文字 */
+.x48yH .xeJ4G:hover {
+    transform: scale(2); /* 拡大率（1.5とかの指定もできる） */
+    position: relative;
+    z-index: 100;
+}
+
+/* 通知のリアクションを拡大 */
+.xeJ4G.x5kTm.xhB9k.xdOTe {
+    width: 120px; /* 拡大したい絵文字の幅 */
+}
+
+/* ノートに付いているリアクションを拡大 */
+.xeJ4G.x5kTm.xhB9k.xunY9 {
+    width: 120px; /* 拡大したい絵文字の幅 */   
+}
