@@ -213,6 +213,7 @@
     - [デフォルトUIでLTLの画像をぼかす](#デフォルトuiでltlの画像をぼかす)
     - [通知インジケータから件数を消す](#通知インジケータから件数を消す)
     - [通知インジケータそのものを消す](#通知インジケータそのものを消す)
+    - [すべてのリアクションを「偉業」にする](#すべてのリアクションを偉業にする)
     - [テンプレ](#テンプレ)
 - [欲しいものリスト](#欲しいものリスト)
 
@@ -1353,6 +1354,35 @@ NSFWのクリック前
  */
 ._indicateCounter {
     display: none;
+}
+```
+
+---
+### すべてのリアクションを「偉業」にする
+偉業にかぎらず任意のリアクションにできます。
+
+![すべてのリアクションを「偉業」にする](assets/img/20230320-171654.png)
+
+```css
+/**
+ * すべてのリアクションを「偉業」にする
+ */
+.xeJ4G.x5kTm.xlm2r,
+.xagin.xlm2r
+{
+    display: none;
+}
+
+.xDpSv:before {
+    display: inline-block;
+    content: "";
+    /* ioの:igyo:絵文字ファイルなので、必要に応じてほかの絵文字にすることも可 */
+    background: url("https://s3.arkjp.net/emoji/igyo.png") no-repeat;
+    height: 1.5em;
+    width: 20px;
+    background-size: contain;
+    vertical-align: -0.4em;
+    margin-right: 4px;
 }
 ```
 
