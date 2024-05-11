@@ -7,6 +7,10 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2024/05/11
+  - 【Update】指定したリアクションをノートや通知欄から消す
+- 2024/05/04
+  - 【New】すべてのリアクションを「偉業」にする
 - 2023/11/10
   - 【Update】通知インジケータから件数を消す
 - 2023/11/08
@@ -743,12 +747,12 @@ time:after {
 どうしても見たくない絵文字がある！という場合に「特定の絵文字を含んでいるノートを非表示にする」カスタムCSSや、Misskey公式のワードミュートと組み合わせてお使いください。  
 ```css
 /* ノートに付いたリアクション一覧から消し去ります */
-._button.xDRXD.xhTzr:has([title=":chikuwa:"]) {
+.xDRXD.xxdvS:has([title=":chikuwa:"]) {
     display: none;
 }
 
 /* 見たくない絵文字の通知を通知欄から消し去ります */
-.notification:has(.xAV2R [title=":chikuwa:"]) {
+.x9Bba._panel:has(.xAV2R [title=":chikuwa:"]) {
     display: none;
 }
 ```
@@ -757,11 +761,11 @@ Unicode絵文字を非表示にしたい場合はこちら
 ```css
 /* Unicode絵文字版 */
 /* ノートに付いたリアクション一覧から消し去ります */
-._button.xDRXD.xhTzr:has([alt="🐶"]) {
+.xDRXD.xxdvS:has([alt="🐶"]) {
     display: none;
 }
 /* 見たくない絵文字の通知を通知欄から消し去ります */
-.notification:has(.xAV2R [alt="🐶"]) {
+.x9Bba._panel:has(.xAV2R [alt="🐶"]) {
     display: none;
 }
 ```
