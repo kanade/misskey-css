@@ -1414,7 +1414,6 @@ NSFWのクリック前
 .xD1mL .x8w8X:nth-child(n+2) {
     display: none;
 }
-
 ```
 
 ---
