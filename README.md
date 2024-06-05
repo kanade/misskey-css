@@ -7,6 +7,8 @@
 ## 更新履歴
 <details><summary>クリックで展開できます</summary><div>
 
+- 2024/06/05
+  - フォロー数 / 被フォロー数を非表示にする
 - 2024/05/11
   - 【Update】指定したリアクションをノートや通知欄から消す
 - 2024/05/04
@@ -1391,6 +1393,32 @@ NSFWのクリック前
 ```
 
 ---
+
+```css
+/**
+ * フォロー数 / 被フォロー数の非表示
+ */
+/* フォロー数 / 被フォロー数を非表示にする */
+.ftskorzw>.main>.profile>.main>.status>a:nth-child(n+2) {
+    display: none;
+}
+/* フォロー数 / 被フォロー数を非表示にする（ポップアップ） */
+.x4wok > .x33Tu {
+    width: 100%;
+}
+.x4wok > .x33Tu:nth-child(n+2) {
+    display: none;
+}
+
+/* 「みつける」など */
+.xD1mL .x8w8X:nth-child(n+2) {
+    display: none;
+}
+
+```
+
+---
+
 ### テンプレ
 ```css
 /**
