@@ -1,0 +1,21 @@
+/**
+ * すべてのリアクションを「偉業」にする
+ */
+ .xeJ4G.x5kTm.xlm2r,
+ .xagin.xlm2r
+ {
+     display: none;
+ }
+ 
+ .xDpSv:before {
+     display: inline-block;
+     content: "";
+     /* ioの:igyo:絵文字ファイルなので、必要に応じてほかの絵文字にすることも可 */
+     background: url("https://s3.arkjp.net/emoji/igyo.png") no-repeat;
+     height: 1.5em;
+     width: 20px;
+     background-size: contain;
+     vertical-align: -0.4em;
+     margin-right: 4px;
+ }
+ 
